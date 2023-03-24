@@ -96,7 +96,7 @@ body {
     padding-bottom: 56.25%;
 
     overflow: hidden;
-    border-radius: 10px !important;
+    border-radius: 15px !important;
 }
 
 .publication-video iframe {
@@ -149,6 +149,14 @@ body {
   margin: 0 !important;
 }
 
+.column {
+  float: left;
+  width: 50%;
+}
+
+table, th, td {
+  border:1px solid black;
+}
 #interpolation-image-wrapper {
   width: 100%;
 }
