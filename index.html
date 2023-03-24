@@ -94,7 +94,7 @@
                 </a>
               </span>
               <!-- Code Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/aioz-ai/GDANCE"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -102,7 +102,7 @@
                   </span>
                   <span>Code (Coming soon)</span>
                   </a>
-              </span>
+              </span> -->
               <!-- Dataset Link. -->
               <span class="link-block">
                 <a href="#"
@@ -156,7 +156,7 @@
       <div class="column is-four-fifths">
         <h2 class="title">Dataset Description</h2>
         <div class="content has-text-justified">
-           AIOZ-GDANCE comprises 16.7 hours of whole-body motion and music audio of group dancing. The duration of each video in our dataset is ranging from 15 to 60 seconds. We randomly sample all videos into train, validation and test sets with 80%; 10%; and 10% of total videos, respectively. AIOZ-GDANCE dataset is large-scale, vary in music genres and dance styles.
+           AIOZ-GDANCE comprises 16.7 hours of whole-body motion and music audio of group dancing. The duration of each video in our dataset is ranging from 15 to 60 seconds. We randomly sample all videos into train, validation and test sets with 80%; 10%; and 10% of total videos, respectively. The dataset is large-scale, vary in music genres and dance styles.
 		</div>
 		
 		<table style="width:100%">
@@ -182,46 +182,47 @@
 			<td>1,808K</td>
 		  </tr>
 		</table>
-		
+    <div class="columns is-centered has-text-centered small">
+
+      <div class="column is-four-fifths">    
+      <div class="row">
+  
+      <div class="column">
+          <img src="static/figures/MvsD.png" alt="cars peace"/>
+      </div>
+      <div class="column">
+          <img src="static/figures/DvsG.png" alt="cars peace"/>
+      </div>
+      </div>
+      </div>
+      </div>
+  
+  
+    <div class="columns is-centered has-text-centered small">
+  
+      <div class="column is-four-fifths">    
+      <div class="row">
+    
+    <div class="column">
+        <img src="static/figures/DS.png" alt="cars peace"/>
+    </div>
+    <div class="column">
+        <img src="static/figures/DS.png" alt="cars peace"/>
+    </div>
+    </div>
+      </div>
+      </div>
 
       </div>
     </div>
+
+    
+
+
   </div>
 
-    <!--/ Paper video. -->
-	<div class="columns is-centered has-text-centered">
+ 
 
-    <div class="column is-four-fifths">    
-		<div class="row">
-
-		<div class="column">
-			  <img src="static/figures/MvsD.png" alt="cars peace"/>
-		</div>
-		<div class="column">
-			  <img src="static/figures/DvsG.png" alt="cars peace"/>
-		</div>
-		</div>
-		
-
-    </div>
-    </div>
-
-    <!--/ Paper video. -->
-	<div class="columns is-centered has-text-centered">
-
-    <div class="column is-four-fifths">    
-		<div class="row">
-	
-	<div class="column">
-		  <img src="static/figures/DS.png" alt="cars peace"/>
-	</div>
-	<div class="column">
-		  <img src="static/figures/DS.png" alt="cars peace"/>
-	</div>
-	</div>
-
-    </div>
-    </div>
 
 </section>
 
@@ -231,9 +232,10 @@
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-	  <h2 class="title">Methodology</h2>
+	  <h2 class="title">Method</h2>
 	    <div class="content has-text-justified">
-          [Place Holder] Music-driven choreography is a challenging problem with a wide variety of industrial applications. Recently, many methods have been proposed to synthesize dance motions from music for a single dancer. However, generating dance motion for a group remains an open problem. In this paper, we present GDANCE, a new large-scale dataset for music-driven group dance generation. Unlike existing datasets that only support single dance, our new dataset contains group dance videos, hence supporting the study of group choreography. We propose a semi-autonomous labeling method with humans in the loop to obtain the 3D ground truth for our dataset. The proposed dataset consists of 16.7 hours of paired music and 3D motion from in-the-wild videos, covering 7 dance styles and 16 music genres. We show that naively applying single dance generation technique to creating group dance motion may lead to unsatisfactory results, such as inconsistent movements and collisions between dancers. Based on our new dataset, we propose a new method that takes an input music sequence and a set of 3D positions of dancers to efficiently produce multiple group-coherent choreographies. We propose new evaluation metrics for measuring group dance quality and perform intensive experiments to demonstrate the effectiveness of our method. Our code and dataset will be released to facilitate future research on group dance generation.          
+        We propose the first baseline for group dance generation that can jointly generate multiple dancing motions expressively and coherently.
+        Our model takes in a music sequence and a set of initial positions, and then auto-regressively generates coherent group dance motions that are attuned to the input music.      
         </div>
         <div class="publication-video">
           <img src="static/figures/baseline.png" alt="cars peace"/>
@@ -246,19 +248,19 @@
 	<div class="columns is-centered has-text-centered">
 
     <div class="column is-four-fifths">
-    <h2 class="title">More Results</h2>
+    <h2 class="title">More Demonstrations</h2>
     
 	<div class="row">
 	
 	<div class="column">
         <div class="publication-video">
-          <iframe src="static/figures/clip1r.mp4"
+          <iframe src="static/figures/clip4r.mp4"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
 	</div>
 	<div class="column">
         <div class="publication-video">
-          <iframe src="static/figures/clip5r.mp4"
+          <iframe src="static/figures/clip2r.mp4"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
 	</div>
@@ -274,7 +276,7 @@
 	</div>
 	<div class="column">
         <div class="publication-video">
-          <iframe src="static/figures/clip4r.mp4"
+          <iframe src="static/figures/clip5r.mp4"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
 	</div>
