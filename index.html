@@ -5,7 +5,7 @@
   <meta name="description"
         content="GDANCE, a new large-scale dataset for music-driven group dance generation.">
   <meta name="keywords" content="GDANCE, Gdance, AIOZ, AIOZ AI">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music-Driven Group Choreography</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
@@ -75,7 +75,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="#"
+                <a href="https://arxiv.org/abs/2303.12337"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -83,7 +83,7 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
+              <!-- Video Link. 
               <span class="link-block">
                 <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
@@ -92,7 +92,7 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span>-->
               <!-- Code Link. -->
               <!-- <span class="link-block">
                 <a href="https://github.com/aioz-ai/GDANCE"
@@ -110,7 +110,7 @@
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
-                  <span>Data (Coming soon)</span>
+                  <span>Dataset</span>
                   </a>
             </div>
 
@@ -122,187 +122,160 @@
 </section>
 
 <section class="section">
-  <div class="container is-max-desktop">
+<div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          Music-driven choreography is a challenging problem with a wide variety of industrial applications. Recently, many methods have been proposed to synthesize dance motions from music for a single dancer. However, generating dance motion for a group remains an open problem. In this paper, we present GDANCE, a new large-scale dataset for music-driven group dance generation. Unlike existing datasets that only support single dance, our new dataset contains group dance videos, hence supporting the study of group choreography. We propose a semi-autonomous labeling method with humans in the loop to obtain the 3D ground truth for our dataset. The proposed dataset consists of 16.7 hours of paired music and 3D motion from in-the-wild videos, covering 7 dance styles and 16 music genres. We show that naively applying single dance generation technique to creating group dance motion may lead to unsatisfactory results, such as inconsistent movements and collisions between dancers. Based on our new dataset, we propose a new method that takes an input music sequence and a set of 3D positions of dancers to efficiently produce multiple group-coherent choreographies. We propose new evaluation metrics for measuring group dance quality and perform intensive experiments to demonstrate the effectiveness of our method. Our code and dataset will be released to facilitate future research on group dance generation.          
+		<div class="column is-four-fifths">
+			<h2 class="title is-3">Abstract</h2>
+				<div class="content has-text-justified">
+					Music-driven choreography is a challenging problem with a wide variety of industrial applications. Recently, many methods have been proposed to synthesize dance motions from music for a single dancer. However, generating dance motion for a group remains an open problem. In this paper, we present GDANCE, a new large-scale dataset for music-driven group dance generation. Unlike existing datasets that only support single dance, our new dataset contains group dance videos, hence supporting the study of group choreography. We propose a semi-autonomous labeling method with humans in the loop to obtain the 3D ground truth for our dataset. The proposed dataset consists of 16.7 hours of paired music and 3D motion from in-the-wild videos, covering 7 dance styles and 16 music genres. We show that naively applying single dance generation technique to creating group dance motion may lead to unsatisfactory results, such as inconsistent movements and collisions between dancers. Based on our new dataset, we propose a new method that takes an input music sequence and a set of 3D positions of dancers to efficiently produce multiple group-coherent choreographies. We propose new evaluation metrics for measuring group dance quality and perform intensive experiments to demonstrate the effectiveness of our method. Our code and dataset will be released to facilitate future research on group dance generation.          
+				</div>
+		</div>
+    </div>
+    
+	<section class="section">
+      <!-- Paper video. -->
+        <div class="columns is-centered has-text-centered">
+			<div class="column is-four-fifths">
+				<div class="publication-video">
+					<video src="static/figures/Demo.mp4" type="video/mp4" controls></video>
+				</div>
+			</div>
+        </div>   
+    </section> 
+
+
+    <section class="section">
+		<div class="container ">
+        <!-- Dataset. -->
+        <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+            <h2 class="title">Dataset Description</h2>
+            <div class="content has-text-justified">
+               AIOZ-GDANCE comprises 16.7 hours of whole-body motion and music audio of group dancing. The duration of each video in our dataset is ranging from 15 to 60 seconds. We randomly sample all videos into train, validation and test sets with 80%; 10%; and 10% of total videos, respectively. The dataset is large-scale, vary in music genres and dance styles.
+			</div>
+			<div class="row">
+				<div class="column2">
+					<img src="static/figures/DS.png" />
+				</div>
+				<div class="column2">
+					<img src="static/figures/DS.png" />
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="column2">
+					<img src="static/figures/MvsD.png" />
+				</div>
+				<div class="column2">
+					<img src="static/figures/DvsG.png" />
+				</div>
+			</div>
+
+			
+
+
+			<table style="width:100%">
+				<tr>
+				<th>Criteria</th>
+				<th>Train</th>
+				<th>Validate</th>
+				<th>Test</th>
+				<th>Total</th>
+				</tr>
+				<tr>
+				<td>Duration (hours) </td>
+				<td>13.5</td>
+				<td>1.6</td>
+				<td>1.6</td>
+				<td>16.7</td>
+				</tr>
+				<tr>
+				<td>Frames</td>
+				<td>1,459K</td>
+				<td>175K</td>
+				<td>174K</td>
+				<td>1,808K</td>
+				</tr>
+			</table>
+			
+			</div>
+          
         </div>
       </div>
-    </div>
-    <section class="section">
-
-      <!-- Paper video. -->
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <div class="publication-video">
-                <video src="static/figures/Demo.mp4" type="video/mp4" controls></video>
-              </div>
-            </div>
-          </div>
-      
-      </section> 
-
-
-      <section class="section">
-        <div class="container ">
-          <!-- Abstract. -->
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <h2 class="title">Dataset Description</h2>
-              <div class="content has-text-justified">
-                 AIOZ-GDANCE comprises 16.7 hours of whole-body motion and music audio of group dancing. The duration of each video in our dataset is ranging from 15 to 60 seconds. We randomly sample all videos into train, validation and test sets with 80%; 10%; and 10% of total videos, respectively. The dataset is large-scale, vary in music genres and dance styles.
-          </div>
-          
-          <table style="width:100%">
-            <tr>
-            <th>Criteria</th>
-            <th>Train</th>
-            <th>Validate</th>
-            <th>Test</th>
-            <th>Total</th>
-            </tr>
-            <tr>
-            <td>Duration (hours) </td>
-            <td>13.5</td>
-            <td>1.6</td>
-            <td>1.6</td>
-            <td>16.7</td>
-            </tr>
-            <tr>
-            <td>Frames</td>
-            <td>1,459K</td>
-            <td>175K</td>
-            <td>174K</td>
-            <td>1,808K</td>
-            </tr>
-          </table>
-          <div class="columns is-centered has-text-centered small">
-      
-            <div class="column is-four-fifths">    
-            <div class="row">
-        
-            <div class="column">
-                <img src="static/figures/MvsD.png" alt="cars peace"/>
-            </div>
-            <div class="column">
-                <img src="static/figures/DvsG.png" alt="cars peace"/>
-            </div>
-            </div>
-            </div>
-            </div>
-        
-        
-          <div class="columns is-centered has-text-centered small">
-        
-            <div class="column is-four-fifths">    
-            <div class="row">
-          
-          <div class="column">
-              <img src="static/figures/DS.png" alt="cars peace"/>
-          </div>
-          <div class="column">
-              <img src="static/figures/DS.png" alt="cars peace"/>
-          </div>
-          </div>
-            </div>
-            </div>
-      
-            </div>
-          </div>
-      
-          
-      
-      
-        </div>
-      
-       
-      
-      
-      </section>
-      
-      
-      <section class="section">
-          <!--/ Paper video. -->
-      
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-          <h2 class="title">Method</h2>
-            <div class="content has-text-justified">
-              We propose the first baseline for group dance generation that can jointly generate multiple dancing motions expressively and coherently.
-              Our model takes in a music sequence and a set of initial positions, and then auto-regressively generates coherent group dance motions that are attuned to the input music.      
-              </div>
-              <div class="publication-video">
-                <img src="static/figures/baseline.png" alt="cars peace"/>
-              </div>
-            </div>
-          </div>
-      
-      
-          <!--/ Paper video. -->
-        <div class="columns is-centered has-text-centered">
-      
-          <div class="column is-four-fifths">
-          <h2 class="title">More Demonstrations</h2>
-          
-        <div class="row">
-        
-        <div class="column">
-              <div class="publication-video">
-		<video src="static/figures/clip4r.mp4" type="video/mp4" controls></video>
-              </div>
-        </div>
-        <div class="column">
-              <div class="publication-video">
-		<video src="static/figures/clip2r.mp4" type="video/mp4" controls></video>
-              </div>
-        </div>
-        </div>
-        
-        <div class="row">
-        
-        <div class="column">
-              <div class="publication-video">
-		<video src="static/figures/clip3r.mp4" type="video/mp4" controls></video>
-              </div>
-        </div>
-        <div class="column">
-              <div class="publication-video">
-		 <video src="static/figures/clip5r.mp4" type="video/mp4" controls></video>
-              </div>
-        </div>
-        </div>
-        
-        
-            </div>
-          </div>
-      
-      </section>
-      
-      <section class="section" id="BibTeX">
-        <div class="container is-max-desktop content">
-          <h2 class="title">BibTeX</h2>
-          <pre><code>@article{aiozGdance,
-        author    = {Le, Nhat and Pham, Thang and Do, Tuong and Tjiputra, Erman and Tran, Quang D. and Nguyen, Anh},
-        title     = {Music-Driven Group Choreography},
-        journal   = {CVPR},
-        year      = {2023},
-      }</code></pre>
-        </div>
-      </section>
-  </div>
+	</section>
+	
+	<section class="section">
+		<div class="container ">
+        <!-- Dataset. -->
+			<div class="columns is-centered has-text-centered">
+				<div class="column is-four-fifths">
+					<h2 class="title">Method</h2>
+					<div class="content has-text-justified">
+						We propose the first baseline for group dance generation that can jointly generate multiple dancing motions expressively and coherently.
+						Our model takes in a music sequence and a set of initial positions, and then auto-regressively generates coherent group dance motions that are attuned to the input music.      
+					</div>
+					<div class="publication-video">
+						<img src="static/figures/baseline.png" alt="cars peace"/>
+					</div>
+					
+				</div> 
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container ">
+        <!-- Demo. -->
+			<div class="columns is-centered has-text-centered">
+				<div class="column is-four-fifths">
+					<h2 class="title">More Demonstrations</h2>
+					
+					<div class="row">
+						<div class="column2">
+							<div class="publication-video">
+								<video src="static/figures/clip4r.mp4" type="video/mp4" controls></video>
+							</div>
+						</div>
+						
+						<div class="column2">
+							<div class="publication-video">
+								<video src="static/figures/clip2r.mp4" type="video/mp4" controls></video>
+							</div>
+						</div>
+					</div>
+					  <p> &nbsp;</p>
+					<div class="row">
+						<div class="column2">
+							<div class="publication-video">
+								<video src="static/figures/clip3r.mp4" type="video/mp4" controls></video>
+							</div>
+						</div>
+						
+						<div class="column2">
+							<div class="publication-video">
+								<video src="static/figures/clip5r.mp4" type="video/mp4" controls></video>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</section>
+ 
+    <section class="section" id="BibTeX">
+		<div class="container is-max-desktop content">
+			<h2 class="title">BibTeX</h2>
+			<pre><code>@article{aiozGdance,
+				author    = {Le, Nhat and Pham, Thang and Do, Tuong and Tjiputra, Erman and Tran, Quang D. and Nguyen, Anh},
+				title     = {Music-Driven Group Choreography},
+				journal   = {CVPR},
+				year      = {2023},
+				}
+			</code></pre>
+		</div>
+    </section>
+</div>
 </section>
-
-
-
-
-
-
-
-
-
 
 <footer class="footer">
   <div class="container">
