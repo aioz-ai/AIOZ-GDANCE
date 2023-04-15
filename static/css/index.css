@@ -149,13 +149,27 @@ body {
   margin: 0 !important;
 }
 
-.column {
-  float: left;
-  width: 50%;
+.row {
+  display: flex;
+  gap: 5%;
 }
 
-table, th, td {
-  border:1px solid black;
+.column2 {
+  flex: 50%;
+  gap: 5%;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  vertical-align: center;
 }
 #interpolation-image-wrapper {
   width: 100%;
