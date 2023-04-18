@@ -68,7 +68,7 @@ python vis_smpl_kpt.py \
 #### Visualize the SMPL Mesh
 The following command will calculate the SMPL meshes and visualize in 3D. 
 ``` bash
-python vis_smpls_mesh.py \
+python vis_smpl_mesh.py \
   --data_dir <ANNOTATIONS_DIR>/motions_smpl \
   --smpl_path <SMPL_DIR>/SMPL_FEMALE.PKL \
   --sequence_name sequence_name.pkl
