@@ -60,7 +60,7 @@ pip install numpy==1.23.0
 The following command will first calculate the SMPL joint locations (joint rotations and root translation) and then plot on the 3D figure in realtime.
 ``` bash
 python vis_smpl_kpt.py \
-  --data_dir <ANNOTATIONS_DIR>/motions_smpl \
+  --data_dir <DATA_DIR>/motions_smpl \
   --smpl_path <SMPL_DIR>/SMPL_FEMALE.PKL \
   --sequence_name sequence_name.pkl
 ```
@@ -69,7 +69,7 @@ python vis_smpl_kpt.py \
 The following command will calculate the SMPL meshes and visualize in 3D. 
 ``` bash
 python vis_smpl_mesh.py \
-  --data_dir <ANNOTATIONS_DIR>/motions_smpl \
+  --data_dir <DATA_DIR>/motions_smpl \
   --smpl_path <SMPL_DIR>/SMPL_FEMALE.PKL \
   --sequence_name sequence_name.pkl
 ```
