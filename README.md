@@ -74,6 +74,17 @@ python vis_smpl_mesh.py \
   --sequence_name sequence_name.pkl
 ```
 
+
+## TODO
+- [x] ~~**Dataset Part 01**~~
+- [ ] **Dataset Part 02**: Under construction :construction:
+- [ ] **Dataset Part 03**: Under construction :construction:
+- [ ] **Dataset Part 04**: Under construction :construction:
+- [ ] **Baseline model & evaluation code**: TBD
+- [ ] **Training code**: TBD
+
+
+
 ## Citation
 ```
 @article{aiozGdance,
