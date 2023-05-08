@@ -1,11 +1,14 @@
 
 
 # GDANCE: "Music-Driven Group Choreography"
+![](https://vision.aioz.io/f/1e065962a9b747b3a856/?dl=1)*<center> We demonstrate the AIOZ-GDANCE dataset with in-the-wild videos, music audio, and 3D group dance motion. </center>* 
 ## Abstract
 > Music-driven choreography is a challenging problem with a wide variety of industrial applications. Recently, many methods have been proposed to synthesize dance motions from music for a single dancer. However, generating dance motion for a group remains an open problem. In this paper, we present GDANCE, a new large-scale dataset for music-driven group dance generation. Unlike existing datasets that only support single dance, our new dataset contains group dance videos, hence supporting the study of group choreography. We propose a semi-autonomous labeling method with humans in the loop to obtain the 3D ground truth for our dataset. The proposed dataset consists of 16.7 hours of paired music and 3D motion from in-the-wild videos, covering 7 dance styles and 16 music genres. We show that naively applying single dance generation technique to creating group dance motion may lead to unsatisfactory results, such as inconsistent movements and collisions between dancers. Based on our new dataset, we propose a new method that takes an input music sequence and a set of 3D positions of dancers to efficiently produce multiple group-coherent choreographies. We propose new evaluation metrics for measuring group dance quality and perform intensive experiments to demonstrate the effectiveness of our method. Our code and dataset will be released to facilitate future research on group dance generation.
 
+
+
 ## Dataset Structure
-**[Download]** The dataset (part 1/4) can be downloaded at [Link](https://vision.aioz.io/f/cc712c8bc57e41d5a6ad/?dl=1)
+**[Download]** The dataset **(part 1)** can be downloaded at  [Link](https://vision.aioz.io/f/cc712c8bc57e41d5a6ad/?dl=1)
 
 The data directory is organized as follows:
 - **split_sequence_names.txt**:
@@ -32,6 +35,11 @@ smpl_trans = data['root_trans']
 ```
 
 ## Visualizing
+
+![Figure 4](https://vision.aioz.io/f/ba4e8af5157a4d97940d/?dl=1) 
+
+![Figure 5](https://vision.aioz.io/f/0e60939a68e44265b0ac/?dl=1)
+
 We provide demo code for loading and visualizing the motions. 
 
 ### Prerequisites
@@ -77,9 +85,7 @@ python vis_smpl_mesh.py \
 
 ## TODO
 - [x] ~~**Dataset Part 01**~~
-- [ ] **Dataset Part 02**: Under construction :construction:
-- [ ] **Dataset Part 03**: Under construction :construction:
-- [ ] **Dataset Part 04**: Under construction :construction:
+- [ ] **Other parts**: Comming soon.
 - [ ] **Baseline model & evaluation code**: TBD
 - [ ] **Training code**: TBD
 
