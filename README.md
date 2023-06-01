@@ -36,9 +36,9 @@ smpl_trans = data['root_trans']
 
 ## Visualizing
 
-![Figure 4](https://vision.aioz.io/f/ba4e8af5157a4d97940d/?dl=1) 
+![Figure 4](https://github.com/aioz-ai/AIOZ-GDANCE/blob/main/4r.gif) 
 
-![Figure 5](https://vision.aioz.io/f/0e60939a68e44265b0ac/?dl=1)
+![Figure 5](https://github.com/aioz-ai/AIOZ-GDANCE/blob/main/1r.gif)
 
 We provide demo code for loading and visualizing the motions. 
 
