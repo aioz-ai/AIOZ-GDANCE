@@ -13,7 +13,7 @@
 4. [Usage](#usage)
 
 ## Dataset Structure
-**[Download]** The dataset **(part 1)** can be downloaded at  [Link](https://vision.aioz.io/f/cc712c8bc57e41d5a6ad/?dl=1)
+**[Download]** The dataset can be downloaded at [Link](https://vision.aioz.io/f/430eb9d90552480e8b4e/?dl=1)
 
 The data directory is organized as follows:
 - **split_sequence_names.txt**:
@@ -38,12 +38,12 @@ smpl_trans = data['root_trans']
 
 # ... may utilize the pose by using SMPL forward function: https://github.com/vchoutas/smplx
 ```
-
-## Visualizing
-
 ![Figure 4](https://github.com/aioz-ai/AIOZ-GDANCE/blob/main/4r.gif) 
 
 ![Figure 5](https://github.com/aioz-ai/AIOZ-GDANCE/blob/main/1r.gif)
+
+## Visualizing
+
 
 We provide demo code for loading and visualizing the motions. 
 
@@ -89,8 +89,7 @@ python vis_smpl_mesh.py \
 
 
 ## TODO
-- [x] ~~**Dataset Part 01**~~
-- [ ] **Other parts**: Comming soon.
+- [x] ~~**Dataset**~~
 - [ ] **Baseline model & evaluation code**: TBD
 - [ ] **Training code**: TBD
 
