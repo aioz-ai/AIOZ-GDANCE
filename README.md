@@ -1,6 +1,10 @@
 
 
-# [GDANCE: "Music-Driven Group Choreography"](https://openaccess.thecvf.com/content/CVPR2023/papers/Le_Music-Driven_Group_Choreography_CVPR_2023_paper.pdf)
+# [Music-Driven Group Choreography (CVPR 2023)](https://openaccess.thecvf.com/content/CVPR2023/papers/Le_Music-Driven_Group_Choreography_CVPR_2023_paper.pdf)
+### *Nhat Le, Thang Pham, Tuong Do, Erman Tjiputra, Quang D. Tran, Anh Nguyen*
+### | [Project Page](https://aioz-ai.github.io/AIOZ-GDANCE/)  | [Paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Le_Music-Driven_Group_Choreography_CVPR_2023_paper.pdf) |
+
+
 ![](https://vision.aioz.io/f/1e065962a9b747b3a856/?dl=1)*<center> We demonstrate the AIOZ-GDANCE dataset with in-the-wild videos, music audio, and 3D group dance motion. </center>*
 
 ## Abstract
