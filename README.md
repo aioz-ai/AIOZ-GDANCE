@@ -1,8 +1,8 @@
 
 
 # [Music-Driven Group Choreography (CVPR 2023)](https://openaccess.thecvf.com/content/CVPR2023/papers/Le_Music-Driven_Group_Choreography_CVPR_2023_paper.pdf)
-### *Nhat Le, Thang Pham, Tuong Do, Erman Tjiputra, Quang D. Tran, Anh Nguyen*
-### | [Project Page](https://aioz-ai.github.io/AIOZ-GDANCE/)  | [Paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Le_Music-Driven_Group_Choreography_CVPR_2023_paper.pdf) |
+### *[Nhat Le](https://minhnhatvt.github.io/), [Thang Pham](https://phamtrongthang123.github.io/), [Tuong Do](https://scholar.google.com/citations?user=qCcSKkMAAAAJ&hl=en), [Erman Tjiputra](https://sg.linkedin.com/in/erman-tjiputra), [Quang D. Tran](https://scholar.google.com/citations?user=DbAThEgAAAAJ&hl=en), [Anh Nguyen](https://cgi.csc.liv.ac.uk/~anguyen/)*
+### [[Project Page](https://aioz-ai.github.io/AIOZ-GDANCE/)] [[Paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Le_Music-Driven_Group_Choreography_CVPR_2023_paper.pdf)]
 
 
 ![](https://vision.aioz.io/f/1e065962a9b747b3a856/?dl=1)*<center> We demonstrate the AIOZ-GDANCE dataset with in-the-wild videos, music audio, and 3D group dance motion. </center>*
@@ -11,12 +11,12 @@
 > Music-driven choreography is a challenging problem with a wide variety of industrial applications. Recently, many methods have been proposed to synthesize dance motions from music for a single dancer. However, generating dance motion for a group remains an open problem. In this paper, we present GDANCE, a new large-scale dataset for music-driven group dance generation. Unlike existing datasets that only support single dance, our new dataset contains group dance videos, hence supporting the study of group choreography. We propose a semi-autonomous labeling method with humans in the loop to obtain the 3D ground truth for our dataset. The proposed dataset consists of 16.7 hours of paired music and 3D motion from in-the-wild videos, covering 7 dance styles and 16 music genres. We show that naively applying single dance generation technique to creating group dance motion may lead to unsatisfactory results, such as inconsistent movements and collisions between dancers. Based on our new dataset, we propose a new method that takes an input music sequence and a set of 3D positions of dancers to efficiently produce multiple group-coherent choreographies. We propose new evaluation metrics for measuring group dance quality and perform intensive experiments to demonstrate the effectiveness of our method. Our code and dataset will be released to facilitate future research on group dance generation.
 
 ## Table of Contents
-1. [Dataset Structure](#dataset-structure)
+1. [AIOZ-GDANCE Dataset](#aioz-gdance-dataset)
 2. [Visualizing](#visualizing)
 3. [Prerequisites](#prerequisites)
 4. [Usage](#usage)
 
-## Dataset Structure
+## AIOZ-GDANCE Dataset
 **[Download]** The dataset can be downloaded at [Link](https://vision.aioz.io/f/430eb9d90552480e8b4e/?dl=1)
 
 The data directory is organized as follows:
@@ -101,7 +101,7 @@ python vis_smpl_mesh.py \
 
 ## Citation
 ```
-@article{aiozGdance,
+@inproceedings{aiozGdance,
     author    = {Le, Nhat and Pham, Thang and Do, Tuong and Tjiputra, Erman and Tran, Quang D. and Nguyen, Anh},
     title     = {Music-Driven Group Choreography},
     journal   = {CVPR},
@@ -110,7 +110,18 @@ python vis_smpl_mesh.py \
 ```
 
 ## License
-This data is available for non-commercial scientific research purposes as defined in the LICENSE file. By downloading and using this data you agree to the terms in the LICENSE. Third-party datasets and software are subject to their respective licenses.
+Software Copyright License for non-commercial scientific research purposes.
+Please read carefully the following [terms and conditions](LICENSE) and any accompanying
+documentation before you download and/or use AIOZ-GDANCE data, model and
+software, (the "Data & Software"), including 3D meshes, images, videos,
+textures, software, scripts, and animations. By downloading and/or using the
+Data & Software (including downloading, cloning, installing, and any other use
+of the corresponding github repository), you acknowledge that you have read
+these [terms and conditions](LICENSE), understand them, and agree to be bound by them. If
+you do not agree with these [terms and conditions](LICENSE), you must not download and/or
+use the Data & Software. Any infringement of the terms of this agreement will
+automatically terminate your rights under this [License](LICENSE).
+
 
 ## Acknowledgement
 This repo used visualization code from [AIST++](https://github.com/google/aistplusplus_api/tree/main)
