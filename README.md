@@ -17,7 +17,9 @@
 4. [Usage](#usage)
 
 ## AIOZ-GDANCE Dataset
-**[Download]** The dataset can be downloaded at [Link](https://vision.aioz.io/f/430eb9d90552480e8b4e/?dl=1)
+**[Download]** The dataset can be downloaded at [Data](https://vision.aioz.io/f/430eb9d90552480e8b4e/?dl=1)
+
+**[Updated]** The music and dance labels are now available at [Labels](https://vision.aioz.io/f/bef3ae93990e4e43addf/?dl=1)
 
 The data directory is organized as follows:
 - **split_sequence_names.txt**:
