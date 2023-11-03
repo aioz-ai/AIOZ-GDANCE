@@ -96,8 +96,7 @@ python vis_smpl_mesh.py \
 
 ## TODO
 - [x] ~~**Dataset**~~
-- [ ] **Baseline model & evaluation code**: TBD
-- [ ] **Training code**: TBD
+- [ ] **Baseline model & training**: TBD
 
 
 
