@@ -112,7 +112,7 @@ If you use this code as part of any published research, we'd really appreciate i
 }		
 ```
 
-We also make a further step toward improving the performance of the group dance generation model in:
+We also make a further step toward improving the performance of the group dance generation model in (https://github.com/aioz-ai/GCD). If you find that the solution is useful, you could cite the following paper:
 
 ```
 @article{le2023controllable,
