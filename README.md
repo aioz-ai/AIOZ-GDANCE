@@ -101,6 +101,8 @@ python vis_smpl_mesh.py \
 
 
 ## Citation
+If you use this code as part of any published research, we'd really appreciate it if you could cite the following paper:
+
 ```
 @inproceedings{aiozGdance,
     author    = {Le, Nhat and Pham, Thang and Do, Tuong and Tjiputra, Erman and Tran, Quang D. and Nguyen, Anh},
@@ -108,6 +110,21 @@ python vis_smpl_mesh.py \
     journal   = {CVPR},
     year      = {2023},
 }		
+```
+
+We also make a further step toward improving the performance of the group dance generation model in:
+
+```
+@article{le2023controllable,
+  title={Controllable Group Choreography Using Contrastive Diffusion},
+  author={Le, Nhat and Do, Tuong and Do, Khoa and Nguyen, Hien and Tjiputra, Erman and Tran, Quang D and Nguyen, Anh},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={42},
+  number={6},
+  pages={1--14},
+  year={2023},
+  publisher={ACM New York, NY, USA}
+}
 ```
 
 ## License
